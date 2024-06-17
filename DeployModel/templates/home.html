@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Brain Stroke Prediction</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Brain Stroke Prediction</h1>
+        <h3>Enter the form data</h3>
+        <form action="{% url 'result' %}">
+            {% csrf_token %}
+            Gender: <input type="number" required name="Gender"> <br><br>
+            Age: <input type="number" required name="Age"> <br><br>
+            Hypertension: <input type="number" required name="Hypertension"> <br><br>
+            Heart disease: <input type="number" required name="Heart disease"> <br><br>
+            Ever married: <input type="number" required name="Ever married"> <br><br>
+            Work type: <input type="number" required name="Work type"> <br><br>
+            Residence type: <input type="number" required name="Residence type"> <br><br>
+            Glucose level: <input type="number" required name="Glucose level"> <br><br>
+            BMI: <input type="number" required name="BMI"> <br><br>
+            Smoking status: <input type="number" required name="Smoking status"> <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

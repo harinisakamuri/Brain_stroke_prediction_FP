@@ -1,0 +1,27 @@
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Result</title>
+</head>
+<body>
+    <div class="result-container">
+        <h1>The Results are here</h1>
+
+        <h3>The data you entered is:</h3>
+        <p>Gender: {{ params.gender }}</p>
+        <p>Age: {{ params.age }}</p>
+        <p>Hypertension: {{ params.hypertension }}</p>
+        <p>Heart Disease: {{ params.heart_disease }}</p>
+        <p>Ever Married: {{ params.ever_married }}</p>
+        <p>Work Type: {{ params.work_type }}</p>
+        <p>Residence Type: {{ params.Residence_type }}</p>
+        <p>Glucose Level: {{ params.avg_glucose_level }}</p>
+        <p>BMI: {{ params.bmi }}</p>
+        <p>Smoking Status: {{ params.smoking_status }}</p>
+
+        <div class="result">
+            <p>The prediction result is: {{ prediction }}</p>
+        </div>
+    </div>
+</body>
+</html>
